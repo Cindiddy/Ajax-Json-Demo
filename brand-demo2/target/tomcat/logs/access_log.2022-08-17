@@ -1,0 +1,10 @@
+0:0:0:0:0:0:0:1 - - [17/Aug/2022:10:49:36 -0400] "GET /brand-demo2 HTTP/1.1" 302 - http-bio-6310-exec-1 0
+0:0:0:0:0:0:0:1 - - [17/Aug/2022:10:49:36 -0400] "GET /brand-demo2/ HTTP/1.1" 200 52 http-bio-6310-exec-3 26
+0:0:0:0:0:0:0:1 - - [17/Aug/2022:10:50:02 -0400] "GET /brand-demo2/brand.html HTTP/1.1" 200 2792 http-bio-6310-exec-4 19
+0:0:0:0:0:0:0:1 - - [17/Aug/2022:10:50:02 -0400] "GET /brand-demo2/selectAllServlet HTTP/1.1" 200 483 http-bio-6310-exec-5 710
+0:0:0:0:0:0:0:1 - - [17/Aug/2022:10:50:34 -0400] "GET /brand-demo2/brand.html HTTP/1.1" 200 2799 http-bio-6310-exec-6 16
+0:0:0:0:0:0:0:1 - - [17/Aug/2022:10:50:34 -0400] "GET /brand-demo2/selectAllServlet HTTP/1.1" 200 483 http-bio-6310-exec-7 8
+0:0:0:0:0:0:0:1 - - [17/Aug/2022:10:50:36 -0400] "GET /brand-demo2/addBrand.html HTTP/1.1" 200 1949 http-bio-6310-exec-8 6
+0:0:0:0:0:0:0:1 - - [17/Aug/2022:10:51:01 -0400] "POST /brand-demo2/addServlet HTTP/1.1" 200 7 http-bio-6310-exec-9 65
+0:0:0:0:0:0:0:1 - - [17/Aug/2022:10:51:01 -0400] "GET /brand-demo2/brand.html HTTP/1.1" 304 - http-bio-6310-exec-1 4
+0:0:0:0:0:0:0:1 - - [17/Aug/2022:10:51:01 -0400] "GET /brand-demo2/selectAllServlet HTTP/1.1" 200 598 http-bio-6310-exec-1 6

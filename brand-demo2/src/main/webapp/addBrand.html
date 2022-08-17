@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add Brand</title>
+</head>
+<body>
+<h3>Add Brand</h3>
+<form action="" method="post">
+    Brand Name：<input id="brandName" name="brandName"><br>
+    Company Name：<input id="companyName" name="companyName"><br>
+    Ranking：<input id="ordered" name="ordered"><br>
+    Description：<textarea rows="5" cols="20" id="description" name="description"></textarea><br>
+    Status：
+    <input type="radio" name="status" value="0">Stopped
+    <input type="radio" name="status" value="1">Inuse<br>
+
+    <input type="button" id="btn"  value="Submit">
+</form>
+<script src="js/axios-0.18.0.js"></script>
+
+<script>
+    document.getElementById("btn").onclick=function (){
+
+        let formDate={
+            brandName:"",
+            companyName:"",
+            ordered:"",
+            description:"",
+            status:"",
+        }
+
+        let brandName=document.getElementById("brandName").value;
+        formDate.brandName=brandName;
+
+        let companyName=document.getElementById("companyName").value;
+        formDate.companyName=companyName;
+
+        let ordered=document.getElementById("ordered").value;
+        formDate.ordered=ordered;
+
+        let description=document.getElementById("description").value;
+        formDate.description=description;
+
+        let status = document.getElementsByName("status");
+
+        for (let i=0;i<status.length;i++){
+           if (status[i].checked){
+               formDate.status=status[i].value;
+           }
+        }
+
+
+        axios({
+            method:"post",
+            url:"http://localhost:6310/brand-demo2/addServlet",
+            data:formDate
+        }).then(function (resp) {
+            if(resp.data=="success"){
+                location.href="http://localhost:6310/brand-demo2/brand.html"
+            }
+        })
+    }
+</script>
+
+</body>
+</html>

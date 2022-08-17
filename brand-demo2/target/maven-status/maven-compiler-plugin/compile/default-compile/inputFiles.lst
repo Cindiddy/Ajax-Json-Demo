@@ -1,0 +1,16 @@
+/Users/yueqian/Desktop/JavaProjects/brand-demo2/src/main/java/com/cindy/util/CheckCodeUtil.java
+/Users/yueqian/Desktop/JavaProjects/brand-demo2/src/main/java/com/cindy/web/CheckCodeServlet.java
+/Users/yueqian/Desktop/JavaProjects/brand-demo2/src/main/java/com/cindy/web/DeleteByIdServlet.java
+/Users/yueqian/Desktop/JavaProjects/brand-demo2/src/main/java/com/cindy/pojo/User.java
+/Users/yueqian/Desktop/JavaProjects/brand-demo2/src/main/java/com/cindy/mapper/UserMapper.java
+/Users/yueqian/Desktop/JavaProjects/brand-demo2/src/main/java/com/cindy/service/BrandService.java
+/Users/yueqian/Desktop/JavaProjects/brand-demo2/src/main/java/com/cindy/util/SqlSessionFactoryUtils.java
+/Users/yueqian/Desktop/JavaProjects/brand-demo2/src/main/java/com/cindy/service/UserService.java
+/Users/yueqian/Desktop/JavaProjects/brand-demo2/src/main/java/com/cindy/web/SelectByIdServlet.java
+/Users/yueqian/Desktop/JavaProjects/brand-demo2/src/main/java/com/cindy/web/AddServlet.java
+/Users/yueqian/Desktop/JavaProjects/brand-demo2/src/main/java/com/cindy/pojo/Brand.java
+/Users/yueqian/Desktop/JavaProjects/brand-demo2/src/main/java/com/cindy/web/LoginServlet.java
+/Users/yueqian/Desktop/JavaProjects/brand-demo2/src/main/java/com/cindy/mapper/BrandMapper.java
+/Users/yueqian/Desktop/JavaProjects/brand-demo2/src/main/java/com/cindy/web/RegisterServlet.java
+/Users/yueqian/Desktop/JavaProjects/brand-demo2/src/main/java/com/cindy/web/UpdateServlet.java
+/Users/yueqian/Desktop/JavaProjects/brand-demo2/src/main/java/com/cindy/web/SelectAllServlet.java

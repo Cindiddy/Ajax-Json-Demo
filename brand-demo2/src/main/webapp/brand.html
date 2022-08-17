@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="addBrand.html"><input type="button" value="Add New Brand"></a><br>
+<hr>
+<table id="brandTable" border="1" cellspacing="0" width="100%">
+    <tr>
+        <th>No.</th>
+        <th>Brand Name</th>
+        <th>Company Name</th>
+        <th>Ranking</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th>Action</th>
+    </tr>
+    <tr align="center">
+        <td>1</td>
+        <td>Google</td>
+        <td>Google Inc.</td>
+        <td>1</td>
+        <td>Pixel is good</td>
+        <td>Inuse</td>
+        <td><a href="#">Update</a> <a href="#">Delete</a></td>
+    </tr>
+
+    <tr align="center">
+        <td>2</td>
+        <td>Iphone</td>
+        <td>Apple Inc.</td>
+        <td>5</td>
+        <td>Iphone is popular</td>
+        <td>Stopped</td>
+
+        <td><a href="#">Update</a> <a href="#">Delete</a></td>
+    </tr>
+
+    <tr align="center">
+        <td>3</td>
+        <td>Xiaomi</td>
+        <td>Xiaomi Technology</td>
+        <td>100</td>
+        <td>are you ok?</td>
+        <td>Inuse</td>
+
+        <td><a href="#">Update</a> <a href="#">Delete</a></td>
+    </tr>
+</table>
+
+<script src="js/axios-0.18.0.js"></script>
+
+<script>
+    window.onload=function (){
+        axios({
+            method:"get",
+            url:"http://localhost:6310/brand-demo2/selectAllServlet"
+        }).then(function (resp){
+            let brands = resp.data;
+            let tableData="<tr>\n" +
+                "        <th>No.</th>\n" +
+                "        <th>Brand Name</th>\n" +
+                "        <th>Company Name</th>\n" +
+                "        <th>Ranking</th>\n" +
+                "        <th>Description</th>\n" +
+                "        <th>Status</th>\n" +
+                "        <th>Action</th>\n" +
+                "    </tr>";
+            for (let i=0;i<brands.length;i++){
+                let brand=brands[i];
+                tableData+="    <tr align=\"center\">\n" +
+                    "        <td>"+(i+1)+"</td>\n" +
+                    "        <td>"+brand.brandName+"</td>\n" +
+                    "        <td>"+brand.companyName+"</td>\n" +
+                    "        <td>"+brand.ordered+"</td>\n" +
+                    "        <td>"+brand.description+"</td>\n" +
+                    "        <td>"+brand.status+"</td>\n" +
+                    "\n" +
+                    "        <td><a href=\"#\">Update</a> <a href=\"#\">Delete</a></td>\n" +
+                    "    </tr>";
+            }
+
+            document.getElementById("brandTable").innerHTML=tableData;
+        })
+    }
+</script>
+
+</body>
+</html>
