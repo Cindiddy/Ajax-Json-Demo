@@ -15,7 +15,7 @@
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
                 <property name="url" value="jdbc:mysql:///db1?useSSL=false&amp;useServerPrepStmts=true"/>
                 <property name="username" value="root"/>
-                <property name="password" value="Xiangxinwo"/>
+                <property name="password" value="1234"/>
             </dataSource>
         </environment>
     </environments>
